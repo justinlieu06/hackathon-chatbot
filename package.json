@@ -1,10 +1,10 @@
 {
   "name": "botkit-mybot",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Botkit starter kit for web, created with the [Yeoman generator](https://github.com/howdyai/botkit/tree/master/packages/generator-botkit#readme).",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js",
+    "start": "nodemon bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -13,5 +13,16 @@
     "botkit": "^4.10.0",
     "botkit-plugin-cms": "^1.0.3",
     "dotenv": "^7.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinLieu06/hackathon-chatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinLieu06/hackathon-chatbot/issues"
+  },
+  "homepage": "https://github.com/JustinLieu06/hackathon-chatbot#readme"
 }
