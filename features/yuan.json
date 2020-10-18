@@ -1,7 +1,7 @@
 [
     {
         "patterns": [
-            "job-experience-1"
+            "j-1"
         ],
         "events": [
             "message",
@@ -11,7 +11,7 @@
     },
     {
         "patterns": [
-            "job-experience-2"
+            "j-2"
         ],
         "events": [
             "message",
