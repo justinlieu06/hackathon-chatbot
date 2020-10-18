@@ -1,0 +1,22 @@
+[
+    {
+        "patterns": [
+            "job-experience-1"
+        ],
+        "events": [
+            "message",
+            "direct_message"
+        ],
+        "response": "WINGS for Growth: Project Manager Intern"
+    },
+    {
+        "patterns": [
+            "job-experience-2"
+        ],
+        "events": [
+            "message",
+            "direct_message"
+        ],
+        "response": "Teaching Assistant"
+    }
+]
