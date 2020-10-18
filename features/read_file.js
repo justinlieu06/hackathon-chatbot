@@ -19,7 +19,7 @@ module.exports = function (controller) {
             ]
         });
     });
-
+   
     controller.hears('job-experience', "message", async (bot, message) => {
 
         await bot.reply(message, {
@@ -36,6 +36,7 @@ module.exports = function (controller) {
             ]
         });
     });
+    
     function myBotkitMiddleware(bot, message, next) {
       loadHears()
         .then((hears) => {
