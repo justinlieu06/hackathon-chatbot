@@ -10,7 +10,8 @@ module.exports = function(controller) {
     });
 
     controller.on('message,direct_message', async(bot, message) => {
-        await bot.reply(message, `Echo: ${ message.text }`);
+        // await bot.reply(message, `Echo: ${ message.text }`);
+        await bot.reply(message, `I don't know how to response to '${ message.text }'.`);
     });
 
 }
