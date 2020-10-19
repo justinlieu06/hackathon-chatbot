@@ -1,11 +1,11 @@
 module.exports = function(controller) {
   let mem = controller.storage.memory;
 
-  controller.hears(new RegExp('education'),'message,direct_message', async(bot, message) => {
+  controller.hears(new RegExp('contact'),'message,direct_message', async(bot, message) => {
 
-    console.log('I heard education');
+    console.log('I heard contact');
 
-    mem.chosenFile = "education.json";
+    mem.chosenFile = "contact.json";
 
     if (!mem.chosenCreator) {
       await bot.reply(message, {

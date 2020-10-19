@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "yuan contact-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "contact 1 response yuan"
+  },
+  {
+      "patterns": [
+          "yuan contact-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "contact 2 response yuan"
+  }
+]

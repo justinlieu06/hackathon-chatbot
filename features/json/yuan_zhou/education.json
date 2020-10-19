@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "yuan education-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "education 1 response yuan"
+  },
+  {
+      "patterns": [
+          "yuan education-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "education 2 response yuan"
+  }
+]

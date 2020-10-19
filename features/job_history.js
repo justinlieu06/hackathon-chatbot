@@ -3,6 +3,10 @@ module.exports = function(controller) {
 
   controller.hears(new RegExp('job history'),'message,direct_message', async(bot, message) => {
 
+    console.log('I heard job history');
+
+    // mem.chosenFile = "job_history.json";
+
     if (!mem.chosenCreator) {
       await bot.reply(message, {
         text: `I'm sorry. Who would you like to talk to?`,
@@ -15,33 +19,12 @@ module.exports = function(controller) {
         ],
       });
     } else {
-      let replies = [];
-      mem.currentPatterns.forEach((pattern) => {
-        replies.push(pattern);
-      })
-      replies.push({
-        title: "Not interested",
-        payload: "I'm not interested in this.",
-      });
       
       await bot.reply(message, {
         text: `I have lots of experience. Which one are you interested in?`,
-        // quick_replies: [
-        //   {
-        //     title: mem.currentPattern,
-        //     payload: mem.currentPattern,
-        //   },
-        //   {
-        //     title: mem.currentPattern,
-        //     payload: mem.currentPattern,
-        //   },
-        //   {
-        //     title: "Not interested",
-        //     payload: "I'm not interested in this.",
-        //   },
-        // ],
-        quick_replies: replies,
+        quick_replies: mem.replies,
       });
+
     }
   });
 }

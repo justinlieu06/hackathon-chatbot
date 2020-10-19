@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "yuan job-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "job 1 response yuan"
+  },
+  {
+      "patterns": [
+          "yuan j-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "job 2 response yuan"
+  }
+]

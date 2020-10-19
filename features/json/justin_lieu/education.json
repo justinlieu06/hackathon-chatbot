@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "justin education-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "education 1 response justin"
+  },
+  {
+      "patterns": [
+          "justin education-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "education 2 response justin"
+  }
+]

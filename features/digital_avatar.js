@@ -42,14 +42,14 @@ module.exports = function(controller) {
   /* hears for choosing digital avatar*/
   controller.hears(async (message) => message.text && message.text.toLowerCase().includes('justin lieu'),'message,direct_message', async(bot, message) => {
     mem.chosenCreator = 'justin_lieu';
-    mem.chosenPath = `../json/${mem.chosenCreator}_resume`;
+    console.log('justin selected');
     await bot.reply(message, `Hi, I am Justin Lieu's digital avatar!`);
     await bot.beginDialog('creator_info');
   });
 
   controller.hears(async (message) => message.text && message.text.toLowerCase().includes('yuan zhou'),'message,direct_message', async(bot, message) => {
     mem.chosenCreator = 'yuan_zhou';
-    mem.chosenPath = `../json/${mem.chosenCreator}_resume`;
+    console.log('yuan selected');
     await bot.reply(message, `Hi, I am Yuan Zhou's digital avatar!`);
     await bot.beginDialog('creator_info');
   });

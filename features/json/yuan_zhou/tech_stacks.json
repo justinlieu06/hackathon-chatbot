@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "yuan tech stacks-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "tech stacks 1 response yuan"
+  },
+  {
+      "patterns": [
+          "yuan tech stacks-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "tech stacks 2 response yuan"
+  }
+]
