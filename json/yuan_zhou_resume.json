@@ -1,0 +1,22 @@
+[
+  {
+    "patterns": ["j-1"],
+    "events": ["message", "direct_message"],
+    "response": "WINGS for Growth: Project Manager Intern"
+  },
+  {
+    "patterns": ["j-2"],
+    "events": ["message", "direct_message"],
+    "response": "Teaching Assistant"
+  },
+  {
+    "patterns": ["e-1"],
+    "events": ["message", "direct_message"],
+    "response": "yuan education one filler"
+  },
+  {
+    "patterns": ["e-2"],
+    "events": ["message", "direct_message"],
+    "response": "yuan education two filler"
+  }
+]
