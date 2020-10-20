@@ -21,7 +21,7 @@ module.exports = function (controller) {
         hears.forEach((h) => {          
           mem.replies.push({ title: h.patterns[0], payload: h.patterns[0] });
           
-          // use async and await here to make sure the message can be heard and the reply can be sent asynchronously
+          // use async and await here to make sure the message can be heard and the reply can be sent synchronously
           controller.hears(h.patterns, h.events, async(bot, message) => {
             await bot.reply(message, h.response);
           });
