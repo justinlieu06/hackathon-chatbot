@@ -1,13 +1,13 @@
 module.exports = function(controller) {
   let mem = controller.storage.memory;
-
-  controller.hears(new RegExp('job history'),'message,direct_message', async(bot, message) => {
+ 
+  controller.hears(new RegExp('job history'), 'message,direct_message', async(bot, message) => {
 
     console.log('I heard job history');
 
-    // mem.chosenFile = "job_history.json";
-
+    mem.chosenFile = "job_history.json";
     if (!mem.chosenCreator) {
+      //await bot.reply(message, {
       await bot.reply(message, {
         text: `I'm sorry. Who would you like to talk to?`,
         quick_replies: [
@@ -19,7 +19,9 @@ module.exports = function(controller) {
         ],
       });
     } else {
-      
+
+      // clear preloaded mem.replies
+      if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, {
         text: `I have lots of experience. Which one are you interested in?`,
         quick_replies: mem.replies,

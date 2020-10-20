@@ -1,7 +1,7 @@
 [
   {
       "patterns": [
-          "yuan education-1"
+          "yuan edu-1"
       ],
       "events": [
           "message",
@@ -11,7 +11,7 @@
   },
   {
       "patterns": [
-          "yuan education-2"
+          "yuan edu-2"
       ],
       "events": [
           "message",

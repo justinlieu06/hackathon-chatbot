@@ -19,7 +19,8 @@ module.exports = function(controller) {
         ],
       });
     } else {
-      
+      // clear preloaded mem.replies
+      if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, {
         text: `I have lots of experience. Which one are you interested in?`,
         quick_replies: mem.replies,

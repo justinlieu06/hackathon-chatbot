@@ -1,6 +1,7 @@
 module.exports = function(controller) {
   let mem = controller.storage.memory;
-
+  // I changed the pattern name in JSON file from 'yuan-education' to 'yuan-edu' because of the hear conflicts
+  // I hear to RegExp 'education' 
   controller.hears(new RegExp('education'),'message,direct_message', async(bot, message) => {
 
     console.log('I heard education');
@@ -19,12 +20,13 @@ module.exports = function(controller) {
         ],
       });
     } else {
+      // clear preloaded mem.replies
+      if (mem.replies.length !== 0) mem.replies = [];
       
       await bot.reply(message, {
-        text: `I have lots of experience. Which one are you interested in?`,
+        text: `I have lots of education. Which one are you interested in?`,
         quick_replies: mem.replies,
       });
-
     }
   });
 }
