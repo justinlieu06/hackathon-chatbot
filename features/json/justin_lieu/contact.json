@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "justin contact-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "contact 1 response justin"
+  },
+  {
+      "patterns": [
+          "justin contact-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "contact 2 response justin"
+  }
+]

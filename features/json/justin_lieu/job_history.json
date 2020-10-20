@@ -1,0 +1,22 @@
+[
+  {
+      "patterns": [
+          "justin job-1"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "job 1 response justin"
+  },
+  {
+      "patterns": [
+          "justin j-2"
+      ],
+      "events": [
+          "message",
+          "direct_message"
+      ],
+      "response": "job 2 response justin"
+  }
+]
