@@ -7,10 +7,12 @@ module.exports = function(controller) {
   let helpConvo = new BotkitConversation("help", controller);
 
   helpConvo.say(
-    "Type justin to talk to his avatar."
+    "You can type `justin` to talk to his avatar."
   );
 
-  helpConvo.say("Type yuan to talk to her avatar.");
+  helpConvo.say("You can type `yuan` to talk to her avatar.");
+
+  helpConvo.say("Then you can select what you are interested in and explore her/his experience. Have fun!");
 
   controller.addDialog(helpConvo);
 
