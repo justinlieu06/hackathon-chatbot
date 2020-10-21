@@ -1,5 +1,6 @@
 module.exports = function(controller) {
     let mem = controller.storage.memory;
+    console.log('I heard vague number')
     /* hears for numbers*/
     controller.hears(
       new RegExp(/^\d+$/),

@@ -2,7 +2,7 @@ module.exports = function(controller) {
   let mem = controller.storage.memory;
 
   controller.hears(
-    [new RegExp("job history"), new RegExp("job")],
+    new RegExp("job"),
     "message,direct_message",
     async (bot, message) => {
       console.log("I heard job history");

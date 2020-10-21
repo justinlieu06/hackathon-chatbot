@@ -73,14 +73,13 @@ module.exports = function(controller) {
   /* Repeat creator info conversation */
   controller.hears(
     [
-      new RegExp(`menu`),
-      new RegExp(`Menu`),
-      new RegExp(`hello`),
-      new RegExp(`hi`),
-      new RegExp(`What else are you interested in?`),
+      "menu",
+      "Menu"
     ],
     "message,direct_message",
     async (bot, message) => {
+
+      console.log(message.text)
       if (!mem.chosenCreator) {
         //await bot.reply(message, {
         await bot.reply(message, {
