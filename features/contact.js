@@ -3,7 +3,7 @@ module.exports = function(controller) {
   
   controller.hears(new RegExp('contact'),'message,direct_message', async(bot, message) => {
 
-    console.log('I heard contact');
+    //console.log('I heard contact');
     mem.chosenCategory = "contact info";
 
     if (!mem.chosenCreator) {

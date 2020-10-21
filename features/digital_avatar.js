@@ -50,7 +50,7 @@ module.exports = function(controller) {
     "message,direct_message",
     async (bot, message) => {
       mem.chosenCreator = "justin_lieu.json";
-      console.log("justin selected");
+      //console.log("justin selected");
       await bot.reply(message, `Hi, I am Justin Lieu's digital avatar!`);
       await bot.beginDialog("creator_info");
     }
@@ -64,7 +64,7 @@ module.exports = function(controller) {
     "message,direct_message",
     async (bot, message) => {
       mem.chosenCreator = "yuan_zhou.json";
-      console.log("yuan selected");
+      //console.log("yuan selected");
       await bot.reply(message, `Hi, I am Yuanyuan Zhou's digital avatar!`);
       await bot.beginDialog("creator_info");
     }
@@ -79,7 +79,7 @@ module.exports = function(controller) {
     "message,direct_message",
     async (bot, message) => {
 
-      console.log(message.text)
+      //console.log(message.text)
       if (!mem.chosenCreator) {
         //await bot.reply(message, {
         await bot.reply(message, {

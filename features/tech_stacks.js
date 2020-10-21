@@ -5,7 +5,7 @@ module.exports = function(controller) {
     [new RegExp("tech stack"), new RegExp("tech")],
     "message,direct_message",
     async (bot, message) => {
-      console.log("I heard tech stack");
+      //console.log("I heard tech stack");
       mem.chosenCategory = "tech stacks";
       //mem.chosenFile = "tech_stacks.json";
 
