@@ -1,6 +1,6 @@
 module.exports = function(controller) {
   let mem = controller.storage.memory;
-
+  
   controller.hears(new RegExp('contact'),'message,direct_message', async(bot, message) => {
 
     console.log('I heard contact');
@@ -13,7 +13,7 @@ module.exports = function(controller) {
           { title: "Justin", payload: "I want to talk to Justin Lieu." },
           {
             title: "Yuan",
-            payload: "I want to talk to Yuan Zhou.",
+            payload: "I want to talk to Yuanyuan Zhou.",
           },
         ],
       });

@@ -9,7 +9,7 @@ module.exports = function(controller) {
 
   /* creator information conversation */
   let creatorInfoConvo = new BotkitConversation('creator_info', controller);
-
+  
   creatorInfoConvo.say({
     text: "What would you like to know about me?",
     quick_replies: async (template, vars) => {
@@ -42,29 +42,64 @@ module.exports = function(controller) {
 
 
   /* hears for choosing digital avatar*/
-  controller.hears(async (message) => message.text && message.text.toLowerCase().includes('justin lieu'),'message,direct_message', async(bot, message) => {
-    mem.chosenCreator = 'justin_lieu.json';
-    console.log('justin selected');
-    await bot.reply(message, `Hi, I am Justin Lieu's digital avatar!`);
-    await bot.beginDialog('creator_info');
-  });
+  controller.hears(
+    async (message) =>
+      message.text &&
+      (message.text.toLowerCase().includes("justin lieu") ||
+        message.text.toLowerCase().includes("justin")),
+    "message,direct_message",
+    async (bot, message) => {
+      mem.chosenCreator = "justin_lieu.json";
+      console.log("justin selected");
+      await bot.reply(message, `Hi, I am Justin Lieu's digital avatar!`);
+      await bot.beginDialog("creator_info");
+    }
+  );
 
-  controller.hears(async (message) => message.text && message.text.toLowerCase().includes('yuan zhou'),'message,direct_message', async(bot, message) => {
-    mem.chosenCreator = 'yuan_zhou.json';
-    console.log('yuan selected');
-    await bot.reply(message, `Hi, I am Yuanyuan Zhou's digital avatar!`);
-    await bot.beginDialog('creator_info');
-  });
+  controller.hears(
+    async (message) =>
+      message.text &&
+      (message.text.toLowerCase().includes("yuanyuan") ||
+        message.text.toLowerCase().includes("yuan")),
+    "message,direct_message",
+    async (bot, message) => {
+      mem.chosenCreator = "yuan_zhou.json";
+      console.log("yuan selected");
+      await bot.reply(message, `Hi, I am Yuanyuan Zhou's digital avatar!`);
+      await bot.beginDialog("creator_info");
+    }
+  );
 
   /* Repeat creator info conversation */
   controller.hears(
     [
-      new RegExp(`Main Menu`),
+      new RegExp(`menu`),
+      new RegExp(`Menu`),
+      new RegExp(`hello`),
+      new RegExp(`hi`),
       new RegExp(`What else are you interested in?`),
     ],
     "message,direct_message",
     async (bot, message) => {
-      await bot.beginDialog("creator_info");
+      if (!mem.chosenCreator) {
+        //await bot.reply(message, {
+        await bot.reply(message, {
+          text: `I'm sorry. Who would you like to talk to?`,
+          quick_replies: [
+            {
+              title: "Justin",
+              payload: "I want to talk to Justin Lieu.",
+            },
+            {
+              title: "Yuan",
+              payload: "I want to talk to Yuanyuan Zhou.",
+            },
+          ],
+        });
+      } else{
+
+        await bot.beginDialog("creator_info");
+      }
     }
   );
 }
