@@ -1,0 +1,146 @@
+{
+        "job history":     
+            [
+                {
+                    "patterns": [
+                        "IT Project Manager"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": 
+                        [
+                            "Company: WINGS for Growth",
+                            "Job Description: Initiated, designed and developed the online learning portal using WordPress, HTML, and CSS",
+                            "Timeline: 2019/01 - present"
+                        ]
+                },
+                {
+                    "patterns": [
+                        "Teaching Assistant for Data Analysis"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Company: Fortino Global Education",
+                        "Job Description: Formulated and designed introductory lessons to R and RStudio in Data analysis",
+                        "Timeline: 2020/07 - 2020/09"
+                    ]
+                }
+            ],
+        "education": 
+            [
+                {
+                    "patterns": [
+                        "New York University"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Major: Management and Information Systems",
+                        "Degree: Master of Science",
+                        "Timeline: 2018/09 - 2020/05"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "App Academy"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Major: Software Development",
+                        "Description: Rigorous software engineering program resulting in 1000+ hours of programming experience with a less than 3% acceptance rate",
+                        "Timeline: 2020"
+                    ]
+                }
+            ],
+    "tech stacks": 
+            [
+                {
+                    "patterns": [
+                        "Ruby on Rails"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Years coding: 1 year"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "MERN"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Name: MongoDB, Express.js, React, Node.js",
+                        "Years coding: 1 year"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Python"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Years coding: 2 years"
+                    ]
+                }
+            ],
+    "contact info": 
+            [
+                {
+                    "patterns": [
+                        "Email"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "bettinazhounyu@gmail.com"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Phone"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "+16467569640"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Portfolio"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "bettinapy.com"
+                    ]
+                }
+            ]
+                    
+            
+}

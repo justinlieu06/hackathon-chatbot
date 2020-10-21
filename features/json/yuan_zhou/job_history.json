@@ -1,17 +1,17 @@
 [
   {
       "patterns": [
-          "yuan job-1"
+          "yuan's job 1"
       ],
       "events": [
           "message",
           "direct_message"
       ],
-      "response": "job 1 response yuan"
+      "response": "What do you want to know?"
   },
   {
       "patterns": [
-          "yuan j-2"
+          "yuan's job 2"
       ],
       "events": [
           "message",

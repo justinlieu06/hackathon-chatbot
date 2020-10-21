@@ -4,8 +4,8 @@ module.exports = function(controller) {
   controller.hears(new RegExp('tech stack'),'message,direct_message', async(bot, message) => {
 
     console.log('I heard tech stack');
-
-    mem.chosenFile = "tech_stacks.json";
+    mem.chosenCategory = "tech stacks";
+    //mem.chosenFile = "tech_stacks.json";
 
     if (!mem.chosenCreator) {
       await bot.reply(message, {
@@ -14,7 +14,7 @@ module.exports = function(controller) {
           { title: "Justin", payload: "I want to talk to Justin Lieu." },
           {
             title: "Yuan",
-            payload: "I want to talk to Yuan Zhou.",
+            payload: "I want to talk to Yuanyuan Zhou.",
           },
         ],
       });
@@ -22,7 +22,7 @@ module.exports = function(controller) {
       // clear preloaded mem.replies
       if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, {
-        text: `I have lots of experience. Which one are you interested in?`,
+        text: `I have lots of tech skills. Which one are you interested in?`,
         quick_replies: mem.replies,
       });
 

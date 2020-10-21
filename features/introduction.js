@@ -5,7 +5,6 @@ Introduction Prompt
 const { BotkitConversation } = require('botkit');
 
 module.exports = function (controller) {
-
   let mem = controller.storage.memory;
 
   /* intro conversation */
@@ -75,7 +74,13 @@ module.exports = function (controller) {
   });
 
   // respond to the 'welcome_back event, fired when a web chat reconnects
-  controller.on("welcome_back", async (bot, message) => {
-    await bot.beginDialog("welcomeback")
+  controller.on(["welcome_back"], async (bot, message) => {
+    await bot.beginDialog("welcomeback");
+  });
+
+  /* hears events for introduction */
+  // hear 'reselect bot'
+  controller.hears(new RegExp("reselect bot"),"message,direct_message", async (bot, message) => {
+    await bot.beginDialog("welcomeback");
   });
 };

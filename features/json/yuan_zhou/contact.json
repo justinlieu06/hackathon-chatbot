@@ -1,7 +1,7 @@
 [
   {
       "patterns": [
-          "yuan contact-1"
+          "yuan's email"
       ],
       "events": [
           "message",
@@ -11,7 +11,7 @@
   },
   {
       "patterns": [
-          "yuan contact-2"
+          "yuan's linkedin"
       ],
       "events": [
           "message",

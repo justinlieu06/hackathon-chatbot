@@ -1,0 +1,127 @@
+{
+    "job history": [
+        {
+            "patterns": [
+                "Full Stack Web Developer"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Company: Tutoria",
+                "Job Description: Develop web applications",
+                "Timeline: 2020 - present"
+            ]
+        },
+        {
+            "patterns": [
+                "Residence Hall Communiy Desk Assistant"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Company: Santa Clara University",
+                "Job Description: Led safety and social events using faculty tools, combined budget, and online planning to promote positive community relationships",
+                "Timeline: 2018/09 - 2019/06"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "patterns": [
+                "Santa Clara University"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Major: Computer Science",
+                "Degree: Bachelor of Science",
+                "Timeline: 2017/09 - 2019/05"
+            ]
+        },
+        {
+            "patterns": [
+                "App Academy"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Major: Software Development",
+                "Description: Rigorous software engineering program resulting in 1000+ hours of programming experience with a less than 3% acceptance rate",
+                "Timeline: 2019"
+            ]
+        }
+    ],
+    "tech stacks": [
+        {
+            "patterns": [
+                "Ruby on Rails"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Years coding: 1 year"
+            ]
+        },
+        {
+            "patterns": [
+                "MERN"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Name: MongoDB, Express.js, React, Node.js",
+                "Years coding: 1 year"
+            ]
+        },
+        {
+            "patterns": [
+                "Java"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Years coding: 2 years"
+            ]
+        }
+    ],
+    "contact info": [
+        {
+            "patterns": [
+                "Email"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "justinlieu06@gmail.com"
+            ]
+        },
+        {
+            "patterns": [
+                "Portfolio Site"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "linkedin.com/in/justin-lieu-024744150"
+            ]
+        }
+    ]
+}

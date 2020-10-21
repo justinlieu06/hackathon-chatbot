@@ -9,28 +9,32 @@ module.exports = function (controller) {
     
   async function myBotkitMiddleware(bot, message, next) {
 
-    if (mem.chosenFile !== undefined){
+    if (mem.chosenCreator !== undefined){
       // read json files
-      mem.filePath = `features/json/${mem.chosenCreator}/${mem.chosenFile}`;  
+      //mem.filePath = `features/json/${mem.chosenCreator}/${mem.chosenFile}`; 
+      mem.filePath = `features/json/${mem.chosenCreator}`;  
       const data = await fs.readFile(mem.filePath, "utf8")
       const hears = JSON.parse(data)
 
       if (mem.replies.length !== 0) mem.replies = [];
-  
-      if (hears && _.isArray(hears)) {
-        hears.forEach((h) => {          
+      
+      if (hears && _.isArray(hears[mem.chosenCategory])) {
+        hears[mem.chosenCategory].forEach((h) => {          
           mem.replies.push({ title: h.patterns[0], payload: h.patterns[0] });
           
           // use async and await here to make sure the message can be heard and the reply can be sent synchronously
           controller.hears(h.patterns, h.events, async(bot, message) => {
-            await bot.reply(message, h.response);
+              for (i = 0; i < h.response.length; i++){
+                await bot.reply(message, h.response[i])
+              }
+              await bot.beginDialog("creator_info");
           });
         });
 
       }  
       mem.replies.push({
-        title: "Not interested",
-        payload: "I'm not interested in this.",
+        title: "Go back",
+        payload: "Main Menu",
       });
     }
    

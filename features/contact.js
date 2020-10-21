@@ -4,8 +4,7 @@ module.exports = function(controller) {
   controller.hears(new RegExp('contact'),'message,direct_message', async(bot, message) => {
 
     console.log('I heard contact');
-
-    mem.chosenFile = "contact.json";
+    mem.chosenCategory = "contact info";
 
     if (!mem.chosenCreator) {
       await bot.reply(message, {
@@ -22,7 +21,7 @@ module.exports = function(controller) {
       // clear preloaded mem.replies
       if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, {
-        text: `I have lots of experience. Which one are you interested in?`,
+        text: `Contact me below!`,
         quick_replies: mem.replies,
       });
 

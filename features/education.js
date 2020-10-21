@@ -5,8 +5,7 @@ module.exports = function(controller) {
   controller.hears(new RegExp('education'),'message,direct_message', async(bot, message) => {
 
     console.log('I heard education');
-
-    mem.chosenFile = "education.json";
+    mem.chosenCategory = "education";
 
     if (!mem.chosenCreator) {
       await bot.reply(message, {
@@ -15,7 +14,7 @@ module.exports = function(controller) {
           { title: "Justin", payload: "I want to talk to Justin Lieu." },
           {
             title: "Yuan",
-            payload: "I want to talk to Yuan Zhou.",
+            payload: "I want to talk to Yuanyuan Zhou.",
           },
         ],
       });
@@ -24,7 +23,7 @@ module.exports = function(controller) {
       if (mem.replies.length !== 0) mem.replies = [];
       
       await bot.reply(message, {
-        text: `I have lots of education. Which one are you interested in?`,
+        text: `Which one are you interested in?`,
         quick_replies: mem.replies,
       });
     }
