@@ -12,7 +12,7 @@ module.exports = function (controller) {
     if (mem.chosenCreator !== undefined){
       // read json files
       //mem.filePath = `features/json/${mem.chosenCreator}/${mem.chosenFile}`; 
-      mem.filePath = `features/json/${mem.chosenCreator}`; 
+      mem.filePath = `features/json/${mem.chosenCreator}.json`; 
      
       let data = await fs.readFile(mem.filePath, "utf8")
       let hears = JSON.parse(data)

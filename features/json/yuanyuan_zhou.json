@@ -79,7 +79,7 @@
                 },
                 {
                     "patterns": [
-                        "MERN-stack"
+                        "MERN stack"
                     ],
                     "events": [
                         "message",

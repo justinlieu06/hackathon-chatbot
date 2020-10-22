@@ -82,7 +82,7 @@ module.exports = function (controller) {
 
   /* hears events for introduction */
   // hear 'reselect bot'
-  controller.hears(new RegExp("reselect bot"),"message,direct_message", async (bot, message) => {
+  controller.hears(new RegExp("reselect"),"message,direct_message", async (bot, message) => {
     // clear preloaded mem.replies
     if (mem.replies.length !== 0) mem.replies = [];
     await bot.beginDialog("welcomeback");
