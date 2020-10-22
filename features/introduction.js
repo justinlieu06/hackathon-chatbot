@@ -75,12 +75,16 @@ module.exports = function (controller) {
 
   // respond to the 'welcome_back event, fired when a web chat reconnects
   controller.on(["welcome_back"], async (bot, message) => {
+    // clear preloaded mem.replies
+    if (mem.replies.length !== 0) mem.replies = [];
     await bot.beginDialog("welcomeback");
   });
 
   /* hears events for introduction */
   // hear 'reselect bot'
   controller.hears(new RegExp("reselect bot"),"message,direct_message", async (bot, message) => {
+    // clear preloaded mem.replies
+    if (mem.replies.length !== 0) mem.replies = [];
     await bot.beginDialog("welcomeback");
   });
 };

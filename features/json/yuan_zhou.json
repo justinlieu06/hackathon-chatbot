@@ -79,7 +79,7 @@
                 },
                 {
                     "patterns": [
-                        "MERN"
+                        "MERN-stack"
                     ],
                     "events": [
                         "message",
@@ -121,7 +121,7 @@
             [
                 {
                     "patterns": [
-                        "Email"
+                        "Email address"
                     ],
                     "events": [
                         "message",
@@ -145,7 +145,7 @@
                 },
                 {
                     "patterns": [
-                        "Portfolio"
+                        "Portfolio site"
                     ],
                     "events": [
                         "message",

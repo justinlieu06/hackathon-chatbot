@@ -46,7 +46,7 @@
         },
         {
             "patterns": [
-                "App Academy"
+                "App-Academy"
             ],
             "events": [
                 "message",
@@ -62,7 +62,7 @@
     "tech stacks": [
         {
             "patterns": [
-                "Ruby on Rails"
+                "Ruby Rails"
             ],
             "events": [
                 "message",
@@ -75,7 +75,7 @@
         },
         {
             "patterns": [
-                "MERN"
+                "MERN-stack"
             ],
             "events": [
                 "message",
@@ -103,7 +103,7 @@
     "contact info": [
         {
             "patterns": [
-                "Email"
+                "Email-Address"
             ],
             "events": [
                 "message",
@@ -115,7 +115,7 @@
         },
         {
             "patterns": [
-                "Portfolio Site"
+                "Portfolio-Site"
             ],
             "events": [
                 "message",

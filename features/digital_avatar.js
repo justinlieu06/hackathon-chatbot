@@ -51,6 +51,8 @@ module.exports = function(controller) {
     async (bot, message) => {
       mem.chosenCreator = "justin_lieu.json";
       //console.log("justin selected");
+      // clear preloaded mem.replies
+      if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, `Hi, I am Justin Lieu's digital avatar!`);
       await bot.beginDialog("creator_info");
     }
@@ -65,6 +67,8 @@ module.exports = function(controller) {
     async (bot, message) => {
       mem.chosenCreator = "yuan_zhou.json";
       //console.log("yuan selected");
+      // clear preloaded mem.replies
+      if (mem.replies.length !== 0) mem.replies = [];
       await bot.reply(message, `Hi, I am Yuanyuan Zhou's digital avatar!`);
       await bot.beginDialog("creator_info");
     }
@@ -96,7 +100,8 @@ module.exports = function(controller) {
           ],
         });
       } else{
-
+        // clear preloaded mem.replies
+        if (mem.replies.length !== 0) mem.replies = [];
         await bot.beginDialog("creator_info");
       }
     }
