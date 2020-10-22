@@ -5,7 +5,7 @@ module.exports = function(controller) {
     new RegExp("job"),
     "message,direct_message",
     async (bot, message) => {
-      console.log("I heard job history");
+      //console.log("I heard job history");
       mem.chosenCategory = "job history";
 
       if (!mem.chosenCreator) {

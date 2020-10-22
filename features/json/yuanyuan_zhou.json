@@ -73,12 +73,13 @@
                         "direct_message"
                     ],
                     "response": [
-                        "Years coding: 1 year"
+                        "Years coding: 1 year",
+                        "LIFO-Overflow - Clone of Stack Overflow <https://lifo-overflow.herokuapp.com/#/>"
                     ]
                 },
                 {
                     "patterns": [
-                        "MERN"
+                        "MERN stack"
                     ],
                     "events": [
                         "message",
@@ -86,7 +87,21 @@
                     ],
                     "response": [
                         "Name: MongoDB, Express.js, React, Node.js",
-                        "Years coding: 1 year"
+                        "Years coding: 1 year",
+                        "Pack-to-Go - Web application that allows people to deliver package while travelling <https://pack-to-go.herokuapp.com/#/>"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "JavaScript"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "Years coding: 1 year",
+                        "Forest Princess - Run game inspired by Super Mario <https://bettinapy.github.io/ForestPrincess/>"
                     ]
                 },
                 {
@@ -106,7 +121,7 @@
             [
                 {
                     "patterns": [
-                        "Email"
+                        "Email address"
                     ],
                     "events": [
                         "message",
@@ -130,14 +145,14 @@
                 },
                 {
                     "patterns": [
-                        "Portfolio"
+                        "Portfolio site"
                     ],
                     "events": [
                         "message",
                         "direct_message"
                     ],
                     "response": [
-                        "bettinapy.com"
+                        "<https://bettinapy.github.io/Bettinapy/>"
                     ]
                 }
             ]

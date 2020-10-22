@@ -46,7 +46,7 @@
         },
         {
             "patterns": [
-                "App Academy"
+                "App-Academy"
             ],
             "events": [
                 "message",
@@ -62,19 +62,20 @@
     "tech stacks": [
         {
             "patterns": [
-                "Ruby on Rails"
+                "Ruby Rails"
             ],
             "events": [
                 "message",
                 "direct_message"
             ],
             "response": [
-                "Years coding: 1 year"
+                "Years coding: 1 year",
+                "ViewTube - clone of Youtube <https://viewtube-fsp.herokuapp.com/#/>"
             ]
         },
         {
             "patterns": [
-                "MERN"
+                "MERN-stack"
             ],
             "events": [
                 "message",
@@ -82,7 +83,8 @@
             ],
             "response": [
                 "Name: MongoDB, Express.js, React, Node.js",
-                "Years coding: 1 year"
+                "Years coding: 1 year",
+                "TravelPack <https://travel-pack.herokuapp.com/#/>"
             ]
         },
         {
@@ -101,7 +103,7 @@
     "contact info": [
         {
             "patterns": [
-                "Email"
+                "Email-Address"
             ],
             "events": [
                 "message",
@@ -113,14 +115,14 @@
         },
         {
             "patterns": [
-                "Portfolio Site"
+                "Portfolio-Site"
             ],
             "events": [
                 "message",
                 "direct_message"
             ],
             "response": [
-                "linkedin.com/in/justin-lieu-024744150"
+                "<https://justinlieu06.github.io/>"
             ]
         }
     ]

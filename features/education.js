@@ -4,7 +4,7 @@ module.exports = function(controller) {
   // I hear to RegExp 'education' 
   controller.hears(new RegExp('education'),'message,direct_message', async(bot, message) => {
 
-    console.log('I heard education');
+    //console.log('I heard education');
     mem.chosenCategory = "education";
 
     if (!mem.chosenCreator) {
