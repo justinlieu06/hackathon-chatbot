@@ -34,6 +34,10 @@ module.exports = function(controller) {
           title: "Reselect bot",
           payload: "reselect bot",
         },
+        {
+          title: "Help",
+          payload: "help",
+        },
       ];
     },
   });
@@ -97,10 +101,19 @@ module.exports = function(controller) {
       } else {
         // clear preloaded mem.replies
         if (mem.replies.length !== 0) mem.replies = [];
-        await bot.reply(
-          message,
-          `You are talking to ${mem.chosenCreator}'s avatar`
-        );
+        if (mem.chosenCreator === "justin_lieu"){
+          await bot.reply(
+            message,
+            `This is Justin Lieu you are speaking to.`
+          );
+        }
+        else if (mem.chosenCreator === "yuanyuan_zhou"){
+          await bot.reply(
+            message,
+            `You are talking to yuanyuan zhou's avatar.`
+          );
+        }
+        
         await bot.beginDialog("creator_info");
       }
     }

@@ -128,7 +128,7 @@
                         "direct_message"
                     ],
                     "response": [
-                        "bettinazhounyu@gmail.com"
+                        "<bettinazhounyu@gmail.com>"
                     ]
                 },
                 {
@@ -153,6 +153,18 @@
                     ],
                     "response": [
                         "<https://bettinapy.github.io/Bettinapy/>"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "LinkedIn"
+                    ],
+                    "events": [
+                        "message",
+                        "direct_message"
+                    ],
+                    "response": [
+                        "<https://www.linkedin.com/in/yuanyuan-zhou-0819a6164/>"
                     ]
                 }
             ]
