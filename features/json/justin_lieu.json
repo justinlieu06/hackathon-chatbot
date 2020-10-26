@@ -103,7 +103,7 @@
     "contact info": [
         {
             "patterns": [
-                "Email-Address"
+                "Email Address"
             ],
             "events": [
                 "message",
@@ -115,7 +115,7 @@
         },
         {
             "patterns": [
-                "Portfolio-Site"
+                "Portfolio Site"
             ],
             "events": [
                 "message",
@@ -123,6 +123,18 @@
             ],
             "response": [
                 "<https://justinlieu06.github.io/>"
+            ]
+        }
+        {
+            "patterns": [
+                "LinkedIn"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "<https://www.linkedin.com/in/justin-lieu-024744150/>"
             ]
         }
     ]

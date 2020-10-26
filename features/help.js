@@ -12,7 +12,11 @@ module.exports = function(controller) {
 
   helpConvo.say("You can type `yuan` to talk to her avatar.");
 
-  helpConvo.say("Then you can select what you are interested in and explore her/his experience. Have fun!");
+  helpConvo.say("Then you can select what you are interested in and explore her/his experience.");
+
+  helpConvo.say("You can also type 'tell me about yourself' to get an overview of the avatar you're speaking with.");
+
+  helpConvo.say("Have fun!");
 
   controller.addDialog(helpConvo);
 

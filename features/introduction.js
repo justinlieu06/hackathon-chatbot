@@ -56,7 +56,9 @@ module.exports = function (controller) {
     text: "Who do you want to talk to?",
     quick_replies: async (template, vars) => {
       return [
-        { title: "Justin", payload: "I would like to speak to Justin Lieu." },
+        { 
+          title: "Justin", 
+          payload: "I would like to speak to Justin Lieu." },
         {
           title: "Yuan",
           payload: "I would like to speak to Yuanyuan Zhou.",
