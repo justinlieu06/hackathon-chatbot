@@ -34,6 +34,10 @@ module.exports = function(controller) {
           title: "Reselect bot",
           payload: "reselect bot",
         },
+        {
+          title: "Help",
+          payload: "help",
+        },
       ];
     },
   });

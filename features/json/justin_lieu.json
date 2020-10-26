@@ -10,7 +10,7 @@
             ],
             "response": [
                 "Company: Tutoria",
-                "Job Description: Develop web applications",
+                "Description: Collaborated with international development team in agile environment to develop React components to support the educational experience of over 200 clients",
                 "Timeline: 2020 - present"
             ]
         },
@@ -24,8 +24,36 @@
             ],
             "response": [
                 "Company: Santa Clara University",
-                "Job Description: Led safety and social events using faculty tools, combined budget, and online planning to promote positive community relationships",
+                "Description: Led safety and social events using faculty tools, combined budget, and online planning to promote positive community relationships",
                 "Timeline: 2018/09 - 2019/06"
+            ]
+        },
+        {
+            "patterns": [
+                "Media Services Specialist"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Company: Santa Clara University",
+                "Description: Managed coworkers and oversaw clients in usage of AV, multimedia, and computer equipment to ensure comprehensive digital media service and support while coordinating with team of 50",
+                "Timeline: 2018/04 - 2019/04"
+            ]
+        },
+        {
+            "patterns": [
+                "Teacher Assistant"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "Company: Santa Clara University",
+                "Description: Taught STEM subjects including Algebra and Biology in classroom environment to underprivileged minorities and adults with intellectual disabilities culminating in increased high school diploma attainments",
+                "Timeline: 2018/01 - 2019/03"
             ]
         }
     ],
@@ -62,15 +90,15 @@
     "tech stacks": [
         {
             "patterns": [
-                "Ruby Rails"
+                "React/Ruby on Rails/Redux"
             ],
             "events": [
                 "message",
                 "direct_message"
             ],
             "response": [
-                "Years coding: 1 year",
-                "ViewTube - clone of Youtube <https://viewtube-fsp.herokuapp.com/#/>"
+                "ViewTube - clone of Youtube <https://viewtube-fsp.herokuapp.com/#/>",
+                "Description: A single page YouTube clone where users can upload, watch, comment on, like, dislike, delete, edit, and search for videos"
             ]
         },
         {
@@ -82,40 +110,40 @@
                 "direct_message"
             ],
             "response": [
-                "Name: MongoDB, Express.js, React, Node.js",
-                "Years coding: 1 year",
-                "TravelPack <https://travel-pack.herokuapp.com/#/>"
+                "TravelPack <https://travel-pack.herokuapp.com/#/>",
+                "Description: A comprehensive MERN stack travel app built in team of four while utilizing Git workflow and meticulous, safe branching"
             ]
         },
         {
             "patterns": [
-                "Java"
+                "JavaScript"
             ],
             "events": [
                 "message",
                 "direct_message"
             ],
             "response": [
-                "Years coding: 2 years"
+                "CodingWizard <https://justinlieu06.github.io/codingwizard/>",
+                "Description: A 2d 16-bit role playing game where player combats hostile bugs and revises terrain; complete with randomizable layout"
             ]
         }
     ],
     "contact info": [
         {
             "patterns": [
-                "Email Address"
+                "Email-Address"
             ],
             "events": [
                 "message",
                 "direct_message"
             ],
             "response": [
-                "justinlieu06@gmail.com"
+                "<justinlieu06@gmail.com>"
             ]
         },
         {
             "patterns": [
-                "Portfolio Site"
+                "Portfolio-Site"
             ],
             "events": [
                 "message",
@@ -124,7 +152,19 @@
             "response": [
                 "<https://justinlieu06.github.io/>"
             ]
-        }
+        },
+        {
+            "patterns": [
+                "Phone"
+            ],
+            "events": [
+                "message",
+                "direct_message"
+            ],
+            "response": [
+                "+16614005812"
+            ]
+        },
         {
             "patterns": [
                 "LinkedIn"

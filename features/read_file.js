@@ -37,6 +37,10 @@ module.exports = function (controller) {
         title: "Go back",
         payload: "Main Menu",
       });
+      mem.replies.push({
+        title: "Help",
+        payload: "Help",
+      });
     }
    
     next();

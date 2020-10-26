@@ -14,7 +14,7 @@ module.exports = function(controller) {
 
   helpConvo.say("Then you can select what you are interested in and explore her/his experience.");
 
-  helpConvo.say("You can also type 'tell me about yourself' to get an overview of the avatar you're speaking with.");
+  helpConvo.say("You can also type 'tell me about yourself' to get an overview of the avatar you're speaking with or 'menu' to get a list of options.");
 
   helpConvo.say("Have fun!");
 

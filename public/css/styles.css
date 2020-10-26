@@ -1,3 +1,6 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
 /* shared botkit ui styles */
 * {
   box-sizing: border-box;
@@ -565,6 +568,51 @@ border-color: rgba(255,255,255,1);
   color: #7C5295;
 }
 
+.line {
+  position: relative;
+  width: 16em;
+  height: 1.2em;
+  margin: 0 auto;
+  margin-top: 0.25em;
+  border-right: 2px solid rgba(255, 255, 255, 0, 0.75);
+  font-size: 3em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Patrick Hand SC', cursive;
+}
 
+/* animation */
+.anim-typewriter {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 23%;
+  text-align: center;
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=styles.css.map */
